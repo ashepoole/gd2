@@ -1,21 +1,41 @@
 @import url("https://use.typekit.net/ckw4tit.css");
 
 body {
-    font-family: futura-pt, sans-serif;
-    font-weight: 400;
+    font-family: edita, serif;
+    font-weight: 500;
     font-style: normal;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 h1 {
     font-family: mrs-eaves, serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 48px;
+    font-size: 78px;
+    text-align: center;
 }
 
-cite {}
+#date {
+    font-family: futura-pt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: right;
+}
+
+cite {
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    text-align: center;
+}
 
 p {
+    font-size: 28px;
+}
 
-    font-size: 20px;
+span {
+    font-size: 100px;
 }
