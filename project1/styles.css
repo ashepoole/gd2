@@ -4,8 +4,15 @@ body {
     font-family: edita, serif;
     font-weight: 500;
     font-style: normal;
+    min-width: 700px;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 100px;
+}
+
+div {
+    margin: 25px;
+    padding: 50px;
 }
 
 h1 {
@@ -33,9 +40,41 @@ cite {
 }
 
 p {
-    font-size: 28px;
+    font-size: 22px;
 }
 
 span {
     font-size: 100px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+html.color-scheme-1 {
+    background-color: #D7C49EFF;
+    color: #343148FF;
+}
+
+html.color-scheme-2 {
+    background-color: #89ABE3FF;
+    color: #FCF6F5FF;
+}
+
+html.color-scheme-3 {
+    background-color: #00539CFF;
+    color: #FFD662FF;
+}
+
+html.color-scheme-4 {
+    background-color: #1C1C1BFF;
+    color: #CE4A7EFF;
+}
+
+html.color-scheme-5 {
+    background-color: #FFE77AFF;
+    color: #2C5F2DFF;
+}
+
+html.color-scheme-6 {
+    background-color: #FAEBEFFF;
+    color: #333D79FF;
 }
