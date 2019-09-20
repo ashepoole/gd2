@@ -1,16 +1,14 @@
 @import url("https://use.typekit.net/ckw4tit.css");
 
 body {
-    font-family: mrs-eaves, serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 100px;
 }
 
 h1 {
-    font-family: mrs-eaves, serif;
+    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 78px;
@@ -20,13 +18,35 @@ h1 {
     margin: 0;
 }
 
+b {
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-feature-settings: "smcp";
+}
+
+blockquote {
+    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 75px;
+    text-align: center;
+    margin: 0 0 70px 0;
+    font-variant-ligatures: discretionary-ligatures;
+
+}
+
 div {
     margin: 25px;
     padding: 50px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 #date {
-    font-family: mr-eaves-modern, sans-serif;
+    font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 24px;
@@ -52,11 +72,7 @@ p {
     font-size: 22px;
 }
 
-em {
-    text-transform: uppercase;
-}
-
-span {
+.sectionbreak {
     font-family: mrs-eaves, serif;
     font-weight: 400;
     font-style: normal;
@@ -68,56 +84,91 @@ span {
     margin: 0 0 -20px 0;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+.nowrap {
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+/* Everything below here is for the color randomizer script */
+
 html.color-scheme-1 {
-    background-color: #D7C49EFF;
-    color: #343148FF;
+    background-color: #D7C49E;
+    color: #343148;
 }
 
 div.color-scheme-1 {
-    border: 4px solid #343148FF;
+    border: 4px solid #343148;
+}
+
+a.color-scheme-1 {
+    color: #343148;
 }
 
 html.color-scheme-2 {
-    background-color: #89ABE3FF;
-    color: #FCF6F5FF;
+    background-color: #89ABE3;
+    color: #FCF6F5;
 }
 
 div.color-scheme-2 {
-    border: 4px solid #FCF6F5FF;
+    border: 4px solid #FCF6F5;
+}
+
+a.color-scheme-2 {
+    color: #FCF6F5;
 }
 
 html.color-scheme-3 {
-    background-color: #00539CFF;
-    color: #FFD662FF;
+    background-color: #00539C;
+    color: #FFD662;
 }
 
 div.color-scheme-3 {
-    border: 4px solid #FFD662FF;
+    border: 4px solid #FFD662;
+}
+
+a.color-scheme-3 {
+    color: #FFD662;
 }
 
 html.color-scheme-4 {
-    background-color: #1C1C1BFF;
-    color: #CE4A7EFF;
+    background-color: #1C1C1B;
+    color: #CE4A7E;
 }
 
 div.color-scheme-4 {
-    border: 4px solid #CE4A7EFF;
+    border: 4px solid #CE4A7E;
+}
+
+a.color-scheme-4 {
+    color: #CE4A7E;
 }
 
 html.color-scheme-5 {
-    background-color: #FFE77AFF;
-    color: #2C5F2DFF;
+    background-color: #FFE77A;
+    color: #2C5F2D;
 }
 
 div.color-scheme-5 {
-    border: 4px solid #2C5F2DFF;
+    border: 4px solid #2C5F2D;
+}
+
+a.color-scheme-5 {
+    color: #2C5F2D;
 }
 
 html.color-scheme-6 {
-    background-color: #FAEBEFFF;
-    color: #333D79FF;
+    background-color: #FAEBEF;
+    color: #333D79;
 }
 
 div.color-scheme-6 {
-    border: 4px solid #333D79FF;
+    border: 4px solid #333D79;
+}
+
+a.color-scheme-6 {
+    color: #333D79;
 }
