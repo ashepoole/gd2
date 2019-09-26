@@ -63,10 +63,7 @@ div {
 }
 
 
-/* CLASSES AND SELECTORS */
-a:link {
-    text-decoration: none;
-}
+/* CLASSES */
 
 .date {
     display: flex;
