@@ -1,91 +1,81 @@
+/* FONTS
+	- default body text  mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    - date & cite        mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
+*/
+
 @import url("https://use.typekit.net/ckw4tit.css");
 
+/* HIGH-LEVEL SETTINGS */
+
 body {
-    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    max-width: 1000px;
     margin: 0 auto;
     padding: 0 100px;
+    max-width: 1000px;
+    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-weight: 400;
 }
 
 h1 {
-    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 78px;
     display: flex;
     justify-content: center;
+    margin: 0;
     padding: 50px 0 0 0;
-    margin: 0;
-}
-
-b {
-    font-family: mrs-eaves, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-feature-settings: "smcp";
-}
-
-blockquote {
-    font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 75px;
-    text-align: center;
-    margin: 0 0 70px 0;
-    font-variant-ligatures: discretionary-ligatures;
-
-}
-
-div {
-    margin: 25px;
-    padding: 50px;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-#date {
-    font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 24px;
-    padding: 40px 0 0 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-cite {
-    font-family: mr-eaves-modern, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 42px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+    font-size: 78px;
 }
 
 p {
     font-size: 22px;
+    /* size chosen to read well at max-width */
 }
 
-.sectionbreak {
-    font-family: mrs-eaves, serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 100px;
+/* LOW-LEVEL SETTINGS */
+
+b {
+    font-feature-settings: "smcp";
+    /* makes the first line of each section display as smallcaps */
+}
+
+blockquote {
+    margin: 0 0 70px 0;
     text-align: center;
+    font-size: 75px;
+    font-style: italic;
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+cite {
     display: flex;
     justify-content: center;
+    margin: 0;
     padding: 0;
-    margin: 0 0 -20px 0;
+    text-align: center;
+    font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    font-style: normal;
+    /* font-style must be set to normal here, or else browser defaults to italic */
 }
 
-.uppercase {
-    text-transform: uppercase;
+div {
+    border: 4px solid;
+    margin: 25px;
+    padding: 50px;
+}
+
+
+/* CLASSES AND SELECTORS */
+a:link {
+    text-decoration: none;
+}
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 40px 0 0 0;
+    font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .nowrap {
@@ -93,7 +83,20 @@ p {
     word-break: keep-all;
 }
 
-/* Everything below here is for the color randomizer script */
+.sectionbreak {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 -20px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 100px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* RANDOM COLOR CONTROL */
 
 html.color-scheme-1 {
     background-color: #D7C49E;
@@ -101,7 +104,7 @@ html.color-scheme-1 {
 }
 
 div.color-scheme-1 {
-    border: 4px solid #343148;
+    border-color: #343148;
 }
 
 a.color-scheme-1 {
@@ -114,7 +117,7 @@ html.color-scheme-2 {
 }
 
 div.color-scheme-2 {
-    border: 4px solid #FCF6F5;
+    border-color: #FCF6F5;
 }
 
 a.color-scheme-2 {
@@ -127,7 +130,7 @@ html.color-scheme-3 {
 }
 
 div.color-scheme-3 {
-    border: 4px solid #FFD662;
+    border-color: #FFD662;
 }
 
 a.color-scheme-3 {
@@ -140,7 +143,7 @@ html.color-scheme-4 {
 }
 
 div.color-scheme-4 {
-    border: 4px solid #CE4A7E;
+    border-color: #CE4A7E;
 }
 
 a.color-scheme-4 {
@@ -153,7 +156,7 @@ html.color-scheme-5 {
 }
 
 div.color-scheme-5 {
-    border: 4px solid #2C5F2D;
+    border-color: #2C5F2D;
 }
 
 a.color-scheme-5 {
@@ -166,7 +169,7 @@ html.color-scheme-6 {
 }
 
 div.color-scheme-6 {
-    border: 4px solid #333D79;
+    border-color: #333D79;
 }
 
 a.color-scheme-6 {
