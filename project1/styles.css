@@ -8,19 +8,19 @@
 /* HIGH-LEVEL SETTINGS */
 
 body {
-    margin: 0 auto;
-    padding: 0 100px;
-    max-width: 1000px;
     font-family: mrs-eaves, "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: 400;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 100px;
 }
 
 h1 {
     display: flex;
+    font-size: 78px;
     justify-content: center;
     margin: 0;
     padding: 50px 0 0 0;
-    font-size: 78px;
 }
 
 p {
@@ -36,23 +36,23 @@ b {
 }
 
 blockquote {
-    margin: 0 0 70px 0;
-    text-align: center;
     font-size: 75px;
     font-style: italic;
     font-variant-ligatures: discretionary-ligatures;
+    margin: 0 0 70px 0;
+    text-align: center;
 }
 
 cite {
     display: flex;
+    font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
     justify-content: center;
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
-    font-size: 42px;
-    font-weight: 700;
-    font-style: normal;
     /* font-style must be set to normal here, or else browser defaults to italic */
 }
 
@@ -67,12 +67,12 @@ div {
 
 .date {
     display: flex;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 40px 0 0 0;
     font-family: mr-eaves-modern, "Futura", Helvetica, Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 40px 0 0 0;
 }
 
 .nowrap {
@@ -82,11 +82,11 @@ div {
 
 .sectionbreak {
     display: flex;
+    font-size: 100px;
     justify-content: center;
     margin: 0 0 -20px 0;
     padding: 0;
     text-align: center;
-    font-size: 100px;
 }
 
 .uppercase {
