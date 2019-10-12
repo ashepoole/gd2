@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF1CE;
+    color: black;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #A63B32;
+    color: white;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 640px;
+}
+
+h1,
+h2 {
+    font-family: orpheuspro, serif;
+    font-weight: 500;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+}
+
+section {
+    background-color: #E899AB;
+    margin-top: 105px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+section+section {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+}
