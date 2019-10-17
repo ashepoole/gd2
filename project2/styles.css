@@ -88,7 +88,7 @@ img {
 .info {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 20px 8px 20px 20px;
     font-size: 20px;
 }
 
@@ -110,4 +110,11 @@ img {
     text-align: center;
     padding-left: 8px;
     padding-right: 8px;
+    transition: all 300ms;
+}
+
+.read-button:hover {
+    background-color: rgba(166, 59, 50, 1);
+    border-color: white;
+    color: white;
 }
