@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+[data-visible="false"] {
+    display: none !important;
+}
+
 .u-button-reset {
     background: transparent;
     border: 0;
@@ -92,15 +96,9 @@ img {
     font-size: 20px;
 }
 
-.dropdown {
-    display: block;
-    padding: 20px;
-}
-
-#dropdown {
+.recipe {
     background-color: rgba(166, 59, 50, 1);
     color: white;
-    display: none;
     padding: 20px;
 }
 

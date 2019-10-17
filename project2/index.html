@@ -28,10 +28,11 @@
             <div class="info">
                 <p>30 mins</p>
                 <p>$2.35 recipe</p>
-                <button class="u-button-reset read-button" onclick="showCard()">Read Recipe</button>
+                <button class="js-trigger u-button-reset read-button" aria-controls="js-content1" aria-expanded="false"
+                    type="button">Read Recipe</button>
             </div>
 
-            <div id="dropdown">
+            <div id="js-content1" class="recipe" data-visible="false">
 
                 <h3>Ingredients</h3>
                 <ul>
@@ -87,10 +88,11 @@
             <div class="info">
                 <p>1 hr 10 mins</p>
                 <p>$7.76 recipe</p>
-                <button class="u-button-reset">Read Recipe</button>
+                <button class="js-trigger u-button-reset read-button" aria-controls="js-content2" aria-expanded="false"
+                    type="button">Read Recipe</button>
             </div>
 
-            <div class="dropdown">
+            <div id="js-content2" class="recipe" data-visible="false">
 
                 <h3>Ingredients</h3>
                 <ul>
@@ -146,10 +148,11 @@
             <div class="info">
                 <p>30 mins</p>
                 <p>$2.71 recipe</p>
-                <button class="u-button-reset">Read Recipe</button>
+                <button class="js-trigger u-button-reset read-button" aria-controls="js-content3" aria-expanded="false"
+                    type="button">Read Recipe</button>
             </div>
 
-            <div class="dropdown">
+            <div id="js-content3" class="recipe" data-visible="false">
 
                 <h3>Ingredients</h3>
                 <ul>
