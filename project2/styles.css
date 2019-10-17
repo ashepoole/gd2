@@ -91,9 +91,11 @@ img {
 
 .info {
     display: flex;
-    justify-content: space-around;
-    padding: 20px 8px 20px 20px;
-    font-size: 20px;
+    justify-content: space-between;
+}
+
+.info p+p {
+    margin-left: 20px;
 }
 
 .recipe {
@@ -105,9 +107,10 @@ img {
 .read-button {
     border: 2px dashed rgba(166, 59, 50, 1);
     border-radius: 20px;
-    text-align: center;
+    margin-right: 15px;
     padding-left: 8px;
     padding-right: 8px;
+    text-align: center;
     transition: all 300ms;
 }
 
@@ -115,4 +118,11 @@ img {
     background-color: rgba(166, 59, 50, 1);
     border-color: white;
     color: white;
+}
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8px 20px 20px;
+    font-size: 20px;
 }
