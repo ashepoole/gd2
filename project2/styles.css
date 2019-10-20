@@ -95,6 +95,7 @@ img {
 
 .info {
     display: flex;
+    line-height: 20px;
     justify-content: space-between;
 }
 
@@ -112,6 +113,7 @@ img {
 .read-button {
     border: 2px dashed rgba(166, 59, 50, 1);
     border-radius: 20px;
+    line-height: 20px;
     margin-right: 15px;
     padding-left: 8px;
     padding-right: 8px;
