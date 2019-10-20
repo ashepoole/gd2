@@ -36,11 +36,13 @@ header {
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 105px;
     margin-right: auto;
     margin-left: auto;
     width: 90%;
-    max-width: 1200px;
 }
 
 h1,
@@ -73,12 +75,9 @@ img {
 .card {
     margin-right: auto;
     margin-left: auto;
-    width: 500px;
+    max-width: 400px;
+    min-width: 350px;
 }
-
-/* .card+.card {
-    margin-top: 20px;
-} */
 
 .card-top {
     position: relative;
