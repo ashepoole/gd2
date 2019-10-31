@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    background-color: rgba(166, 59, 50, 1);
+    background-color: rgb(166, 59, 50);
     color: white;
     display: block;
     left: 0;
