@@ -1,0 +1,137 @@
+/* DISPLAY SETTINGS */
+
+:root {
+    --color-red: #c61a3a;
+    --color-green: #71f79f;
+    --color-offblack: #1e2019;
+    --color-grey: #d1d5de;
+    --color-offwhite: #fafafa;
+    --color-blue: #163346;
+    --font-body: "'BenchNine', sans-serif";
+    --font-heading: "'Teko', sans-serif;";
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+
+.button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
+}
+
+.button-reset[disabled] {
+    cursor: default;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
+
+/* MAIN SECTIONS */
+
+body {
+    color: var(--color-offblack);
+    font-family: 'BenchNine', sans-serif;
+    font-size: 18px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    height: 300px;
+    width: 900px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 3px solid var(--color-grey);
+    height: 24px;
+    width: 24px;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    border-color: var(--color-green);
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: var(--color-green);
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    border-bottom: 3px solid var(--color-green);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    background-color: var(--color-offwhite);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    background-color: white;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="number"]:valid {
+    background-color: aqua;
+}
+
+input[type="text"]:required:valid,
+input[type="email"]:required:valid,
+input[type="number"]:required:valid {
+    background-color: greenyellow;
+}
+
+/* Broken on Safari & Chrome */
+input[type="text"]:not(:placeholder-shown):invalid,
+input[type="email"]:not(:placeholder-shown):invalid,
+input[type="number"]:not(:placeholder-shown):invalid {
+    background-color: orange;
+}

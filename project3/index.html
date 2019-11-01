@@ -5,11 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Super Hero Registry</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine:300,400,700|Teko:500,600,700&display=swap"
+        rel="stylesheet">
+    <title>Super Hero Registry</title>
 </head>
 
 <body>
+
+    <header>
+        <h1>Super Hero Registry</h1>
+        <p>With great powers there also must come—great responsibility</p>
+    </header>
+
+    <form action="">
+        <label for="real-name">Name</label>
+        <input id="real-name" type="text" required>
+
+        <label>
+            <input id="age" type="number" required>
+            Age
+        </label>
+
+        <input id="email" type="email" required>
+        <label for="email">Email</label>
+
+        <label for="powers">Describe your powers</label>
+        <textarea name="" id="powers">Text here</textarea>
+
+        <label for="speed">Speed</label>
+        <select name="" id="speed">
+            <option value="testing">Testing A Thing</option>
+            <option value="another">Another Thing</option>
+        </select>
+
+        <fieldset>
+            <legend>Category</legend>
+
+            <input id="alien" type="checkbox">
+            <label for="alien">Alien</label>
+
+            <input id="cyborg" type="checkbox">
+            <label for="cyborg">Cyborg</label>
+
+            <input id="experiment" type="checkbox">
+            <label for="experiment">Experiment</label>
+
+            <input id="human" type="checkbox">
+            <label for="human">Human</label>
+
+            <input id="inhuman" type="checkbox">
+            <label for="inhuman">Inhuman</label>
+
+            <input id="mutant" type="checkbox">
+            <label for="mutant">Mutant</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input name="gender" id="woman" type="radio">
+            <label for="woman">Woman</label>
+
+            <input name="gender" id="man" type="radio">
+            <label for="man">Man</label>
+
+            <input name="gender" id="nonbinary" type="radio">
+            <label for="nonbinary">Nonbinary</label>
+
+            <input name="gender" id="genderqueer" type="radio">
+            <label for="genderqueer">Genderqueer/Genderfluid</label>
+
+            <input name="gender" id="no-answer" type="radio">
+            <label for="no-answer">Prefer not to answer</label>
+
+            <input name="gender" id="self-describe" type="radio">
+            <label for="self-describe">Prefer to self describe</label>
+        </fieldset>
+
+        <button class="button-reset" type="submit">Register Now</button>
+    </form>
 
 </body>
 
