@@ -7,8 +7,12 @@
     --color-grey: #d1d5de;
     --color-offwhite: #fafafa;
     --color-blue: #163346;
+
     --font-body: "'BenchNine', sans-serif";
+    /* Weights: 300, 400, 700 */
+
     --font-heading: "'Teko', sans-serif;";
+    /* Weights: 500, 600, 700 */
 }
 
 *,
