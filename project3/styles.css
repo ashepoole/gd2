@@ -3,7 +3,7 @@
 :root {
     --color-red: #c61a3a;
     --color-green: #71f79f;
-    --color-offblack: #1e2019;
+    --color-offblack: hsl(77, 12%, 11%);
     --color-grey: #d1d5de;
     --color-offwhite: #fafafa;
     --color-blue: #163346;
@@ -58,6 +58,10 @@ body {
 fieldset {
     border: 0;
     padding: 0;
+}
+
+form {
+    background-color: var(--color-blue);
 }
 
 input,

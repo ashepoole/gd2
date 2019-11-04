@@ -19,25 +19,22 @@
     </header>
 
     <form action="">
-        <label for="real-name">Name</label>
+        <h2>Identity</h2>
+
+        <label for="real-name">Real Name</label>
         <input id="real-name" type="text" required>
 
+        <label for="alias">Alias</label>
+        <input id="alias" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+
+        <legend>Personal Characteristics</legend>
         <label>
             <input id="age" type="number" required>
             Age
         </label>
-
-        <input id="email" type="email" required>
-        <label for="email">Email</label>
-
-        <label for="powers">Describe your powers</label>
-        <textarea name="" id="powers">Text here</textarea>
-
-        <label for="speed">Speed</label>
-        <select name="" id="speed">
-            <option value="testing">Testing A Thing</option>
-            <option value="another">Another Thing</option>
-        </select>
 
         <fieldset>
             <legend>Category</legend>
@@ -64,11 +61,11 @@
         <fieldset>
             <legend>Gender</legend>
 
-            <input name="gender" id="woman" type="radio">
-            <label for="woman">Woman</label>
+            <input name="gender" id="female" type="radio">
+            <label for="woman">Female</label>
 
-            <input name="gender" id="man" type="radio">
-            <label for="man">Man</label>
+            <input name="gender" id="male" type="radio">
+            <label for="man">Male</label>
 
             <input name="gender" id="nonbinary" type="radio">
             <label for="nonbinary">Nonbinary</label>
@@ -81,7 +78,45 @@
 
             <input name="gender" id="self-describe" type="radio">
             <label for="self-describe">Prefer to self describe</label>
+            <!-- This spot needs a text input -->
         </fieldset>
+
+        <legend>Powers & Abilities</legend>
+
+        <label for="powers">Describe Your Powers</label>
+        <textarea name="" id="powers">Text here</textarea>
+
+        <legend>Rate Your Abilities</legend>
+
+        <img src="images/icon-strength.svg" alt="Alt text goes here.">
+        <label for="strength">Strength</label>
+        <select name="" id="strength">
+            <option value="norm">Within Human Norms</option>
+            <option value="noticeable">Noticeably Above Norms</option>
+            <option value="significant">Significantly Beyond Norms</option>
+            <option value="wild">Wildy Beyond Norms</option>
+            <option value="unlimited">Unlimited</option>
+        </select>
+
+        <img src="images/icon-speed.svg" alt="Alt text goes here.">
+        <label for="speed">Speed</label>
+        <select name="" id="speed">
+            <option value="norm">Within Human Norms</option>
+            <option value="noticeable">Noticeably Above Norms</option>
+            <option value="significant">Significantly Beyond Norms</option>
+            <option value="wild">Wildy Beyond Norms</option>
+            <option value="unlimited">Unlimited</option>
+        </select>
+
+        <img src="images/icon-intelligence.svg" alt="Alt text goes here.">
+        <label for="intelligence">Intelligence</label>
+        <select name="" id="intelligence">
+            <option value="norm">Within Human Norms</option>
+            <option value="noticeable">Noticeably Above Norms</option>
+            <option value="significant">Significantly Beyond Norms</option>
+            <option value="wild">Wildy Beyond Norms</option>
+            <option value="unlimited">Unlimited</option>
+        </select>
 
         <button class="button-reset" type="submit">Register Now</button>
     </form>
