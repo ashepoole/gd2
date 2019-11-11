@@ -14,8 +14,9 @@
 <body>
 
     <header>
+        <img class="logo" src="images/logo-shield.svg" alt="Alt text goes here.">
         <h1>Super Hero Registry</h1>
-        <p>With great powers there also must come—great responsibility</p>
+        <p>With great power there also must come—great responsibility</p>
     </header>
 
     <form action="">
@@ -30,14 +31,13 @@
         <label for="email">Email</label>
         <input id="email" type="email" required>
 
-        <legend>Personal Characteristics</legend>
-        <label>
-            <input id="age" type="number" required>
-            Age
-        </label>
+        <h2>Personal Characteristics</h2>
+        <label for="age">Age</label>
+        <input id="age" type="number" required>
 
         <fieldset>
             <legend>Category</legend>
+            <p>Please select as many as apply to your origin and how you gained your powers.</p>
 
             <input id="alien" type="checkbox">
             <label for="alien">Alien</label>
@@ -81,7 +81,7 @@
             <!-- This spot needs a text input -->
         </fieldset>
 
-        <legend>Powers & Abilities</legend>
+        <h2>Powers & Abilities</h2>
 
         <label for="powers">Describe Your Powers</label>
         <textarea name="" id="powers">Text here</textarea>

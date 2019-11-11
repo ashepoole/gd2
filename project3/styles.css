@@ -3,15 +3,15 @@
 :root {
     --color-red: #c61a3a;
     --color-green: #71f79f;
-    --color-offblack: hsl(77, 12%, 11%);
+    --color-offblack: #1E2019;
     --color-grey: #d1d5de;
     --color-offwhite: #fafafa;
     --color-blue: #163346;
 
-    --font-body: "'BenchNine', sans-serif";
+    --font-body: 'BenchNine', sans-serif;
     /* Weights: 300, 400, 700 */
 
-    --font-heading: "'Teko', sans-serif;";
+    --font-heading: 'Teko', sans-serif;
     /* Weights: 500, 600, 700 */
 }
 
@@ -52,7 +52,11 @@
 /* Main Sections */
 
 body {
-    font-size: 18px;
+    background-color: var(--color-blue);
+    color: white;
+    font-family: var(--font-body);
+    font-size: 22px;
+    margin: 0;
 }
 
 fieldset {
@@ -61,12 +65,35 @@ fieldset {
 }
 
 form {
-    background-color: var(--color-blue);
+    background-color: var(--color-offblack);
+    padding: 16px;
+    margin: 24px;
+}
+
+header {
+    background-color: var(--color-grey);
+    color: black;
+}
+
+h1,
+h2 {
+    font-family: var(--font-heading)
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+img {
+    height: 100px;
+    width: 100px;
 }
 
 input,
 select,
 textarea {
+    display: block;
     font-family: inherit;
 }
 
@@ -74,10 +101,10 @@ select {
     cursor: pointer;
 }
 
-textarea {
+/* textarea {
     height: 300px;
     width: 900px;
-}
+} */
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -140,4 +167,15 @@ input[type="text"]:not(:placeholder-shown):invalid,
 input[type="email"]:not(:placeholder-shown):invalid,
 input[type="number"]:not(:placeholder-shown):invalid {
     background-color: orange;
+}
+
+/* Classes */
+
+.logo {
+    display: block;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    width: 240px;
 }
