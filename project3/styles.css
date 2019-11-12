@@ -64,25 +64,43 @@ fieldset {
     padding: 0;
 }
 
+label {
+    display: inline;
+}
+
 form {
     background-color: var(--color-offblack);
     padding: 16px;
+    position: relative;
+    top: -120px;
     margin: 24px;
 }
 
 header {
     background-color: var(--color-grey);
     color: black;
+    padding-bottom: 100px;
 }
 
 h1,
 h2 {
-    font-family: var(--font-heading)
+    font-family: var(--font-heading);
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 48px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     text-align: center;
+}
+
+h2 {
+    border-bottom: 4px solid var(--color-blue);
+    line-height: 32px;
+    font-weight: 500;
 }
 
 img {
@@ -101,18 +119,19 @@ select {
     cursor: pointer;
 }
 
-/* textarea {
-    height: 300px;
-    width: 900px;
-} */
+textarea {
+    height: 200px;
+    width: 100%;
+}
 
 input[type="radio"],
 input[type="checkbox"] {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    cursor: pointer;
     border: 3px solid var(--color-grey);
+    cursor: pointer;
+    display: inline-block;
     height: 24px;
     width: 24px;
 }
@@ -135,41 +154,49 @@ input[type="checkbox"]:checked {
 
 input[type="radio"]:checked+label,
 input[type="checkbox"]:checked+label {
-    border-bottom: 3px solid var(--color-green);
+    border-bottom: 4px solid var(--color-green);
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"] {
     background-color: var(--color-offwhite);
+    border-bottom: 4px solid;
+    font-size: inherit;
+    height: 68px;
+    width: 100%;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover {
+    background-color: white;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus {
-    background-color: white;
+    border-color: var(--color-green);
 }
 
 input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="number"]:valid {
-    background-color: aqua;
-}
-
-input[type="text"]:required:valid,
-input[type="email"]:required:valid,
-input[type="number"]:required:valid {
     background-color: greenyellow;
+    background-image: url(images/icon-valid.svg);
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: 24px;
 }
 
 /* Broken on Safari & Chrome */
-input[type="text"]:not(:placeholder-shown):invalid,
+/* input[type="text"]:not(:placeholder-shown):invalid,
 input[type="email"]:not(:placeholder-shown):invalid,
 input[type="number"]:not(:placeholder-shown):invalid {
-    background-color: orange;
-}
+    border-color: var(--color-red);
+} */
 
-/* Classes */
+/* Classes & IDs */
 
 .logo {
     display: block;
@@ -178,4 +205,11 @@ input[type="number"]:not(:placeholder-shown):invalid {
     margin-right: auto;
     padding-top: 40px;
     width: 240px;
+}
+
+.subheading {
+    font-family: var(--font-heading);
+    font-size: 26px;
+    font-weight: 500;
+    text-align: center;
 }
