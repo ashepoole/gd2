@@ -64,6 +64,11 @@ fieldset {
     padding: 0;
 }
 
+fieldset label {
+    bottom: 8px;
+    position: relative;
+}
+
 label {
     display: inline;
 }
@@ -182,7 +187,6 @@ input[type="number"]:focus {
 input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="number"]:valid {
-    background-color: greenyellow;
     background-image: url(images/icon-valid.svg);
     background-position: 95% 50%;
     background-repeat: no-repeat;
