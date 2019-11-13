@@ -59,8 +59,35 @@ body {
     margin: 0;
 }
 
-button {
-    color: white;
+button[type="submit"] {
+    background-color: var(--color-green);
+    color: black;
+    clear: both;
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 32px;
+    height: 87px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 205px;
+}
+
+div {
+    border-top: 4px solid var(--color-blue);
+    margin: 104px auto 145px auto;
+    padding-top: 48px;
+    width: 264px;
+}
+
+div input {
+    width: 24px;
+}
+
+div label {
+    float: right;
+    width: 218px;
 }
 
 fieldset {
@@ -92,14 +119,19 @@ legend {
 form {
     background-color: var(--color-offblack);
     padding: 16px;
-    position: relative;
-    top: -120px;
-    margin: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 520px;
 }
 
 header {
     background-color: var(--color-grey);
-    padding-bottom: 100px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 h1,
@@ -221,6 +253,10 @@ p {
 }
 
 select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
     cursor: pointer;
     height: 72px;
     width: 100%;
