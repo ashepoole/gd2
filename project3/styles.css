@@ -223,7 +223,7 @@ input[type="number"]:focus {
     border-bottom: 4px solid var(--color-green);
 }
 
-input[type="text"]:valid,
+/* input[type="text"]:valid,
 input[type="email"]:valid,
 input[type="number"]:valid {
     background-image: url(images/icon-valid.svg);
@@ -236,7 +236,7 @@ input[type="text"]:not(:placeholder-shown):invalid,
 input[type="email"]:not(:placeholder-shown):invalid,
 input[type="number"]:not(:placeholder-shown):invalid {
     border-bottom: 4px solid var(--color-red);
-}
+} */
 
 label {
     display: inline;
@@ -329,7 +329,7 @@ textarea:focus {
 
     fieldset+fieldset {
         margin-top: 0;
-        /* Removes previously set margin. */
+        /* Resets previously set margin. */
     }
 
     .left-column {
@@ -344,6 +344,7 @@ textarea:focus {
 
     .abilities {
         display: flex;
+        /* Flex doesn't work on Chrome. */
         justify-content: space-around;
     }
 
