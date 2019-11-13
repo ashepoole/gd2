@@ -94,14 +94,6 @@ fieldset+fieldset {
     margin-top: 34px;
 }
 
-label {
-    display: inline;
-}
-
-legend {
-    margin-bottom: 16px;
-}
-
 fieldset img {
     margin-bottom: 18px;
 }
@@ -110,6 +102,7 @@ form {
     background-color: var(--color-offblack);
     padding: 18px;
     margin: 520px 24px 24px 24px;
+    max-width: 1000px;
 }
 
 header {
@@ -132,8 +125,8 @@ h1 {
     font-size: 48px;
     font-weight: 700;
     line-height: 40px;
-    margin-bottom: 40px;
-    margin-top: 20px;
+    margin: 40px 18px 20px 18px;
+    /* left/right margin added to keep from colliding with edge of browser */
     text-align: center;
 }
 
@@ -233,6 +226,14 @@ input[type="number"]:valid {
     background-size: 24px;
 } */
 
+label {
+    display: inline;
+}
+
+legend {
+    margin-bottom: 16px;
+}
+
 p {
     color: var(--color-grey);
     margin-top: 0;
@@ -246,11 +247,6 @@ select {
     height: 72px;
     margin: 10px auto 40px auto;
     text-align: center;
-}
-
-span label {
-    float: right;
-    width: 218px;
 }
 
 textarea {
@@ -276,6 +272,12 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 #age {
     max-width: 100px;
+}
+
+.confirm-notice label {
+    float: right;
+    width: 218px;
+
 }
 
 .logo {
@@ -309,6 +311,9 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
     form {
         padding: 32px;
+        margin-bottom: 60px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
 
     .left-column {
@@ -335,5 +340,12 @@ input[type="number"]:not(:placeholder-shown):invalid {
     img {
         height: 130px;
         width: 130px;
+    }
+}
+
+@media (min-width: 1120px) {
+    form {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
