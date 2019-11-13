@@ -76,11 +76,6 @@ div input {
     width: 24px;
 }
 
-div label {
-    float: right;
-    width: 218px;
-}
-
 fieldset {
     border: 0;
     padding: 0;
@@ -113,7 +108,7 @@ fieldset img {
 
 form {
     background-color: var(--color-offblack);
-    padding: 16px;
+    padding: 18px;
     margin: 520px 24px 24px 24px;
 }
 
@@ -249,10 +244,13 @@ select {
     border-radius: 0;
     cursor: pointer;
     height: 72px;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin: 10px auto 40px auto;
     text-align: center;
-    width: 100%;
+}
+
+span label {
+    float: right;
+    width: 218px;
 }
 
 textarea {
@@ -271,7 +269,9 @@ input[type="number"]:not(:placeholder-shown):invalid {
 /* Classes & IDs */
 
 .abilities div {
-    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 240px;
 }
 
 #age {
@@ -328,5 +328,12 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
     fieldset+h2 {
         clear: both;
+    }
+}
+
+@media (min-width: 1024px) {
+    img {
+        height: 130px;
+        width: 130px;
     }
 }
