@@ -244,6 +244,7 @@ select {
     height: 72px;
     margin: 10px auto 40px auto;
     text-align: center;
+    width: 240px;
 }
 
 textarea {
@@ -303,7 +304,13 @@ textarea:focus {
 
 /* Responsive Elements */
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
+
+    .abilities {
+        display: flex;
+        /* Flex doesn't work on Chrome. */
+        justify-content: space-around;
+    }
 
     form {
         padding: 32px;
@@ -317,7 +324,15 @@ textarea:focus {
         /* Resets previously set margin. */
     }
 
-    .left-column {
+    fieldset+h2 {
+        clear: both;
+    }
+
+    select {
+        width: 200px;
+    }
+
+    select .left-column {
         float: left;
         width: 45%;
     }
@@ -327,21 +342,17 @@ textarea:focus {
         width: 45%;
     }
 
-    .abilities {
-        display: flex;
-        /* Flex doesn't work on Chrome. */
-        justify-content: space-around;
-    }
-
-    fieldset+h2 {
-        clear: both;
-    }
 }
 
 @media (min-width: 1024px) {
     img {
         height: 130px;
         width: 130px;
+    }
+
+    select {
+        width: 240px;
+        /* Resets width back from setting in 800px media query. */
     }
 }
 
