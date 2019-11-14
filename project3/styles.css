@@ -319,20 +319,20 @@ textarea:focus {
         margin-right: 60px;
     }
 
+    fieldset+h2 {
+        clear: both;
+    }
+
     fieldset+fieldset {
         margin-top: 0;
         /* Resets previously set margin. */
-    }
-
-    fieldset+h2 {
-        clear: both;
     }
 
     select {
         width: 200px;
     }
 
-    select .left-column {
+    .left-column {
         float: left;
         width: 45%;
     }
