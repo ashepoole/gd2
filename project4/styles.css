@@ -1,0 +1,39 @@
+/* Font & Color Palette */
+
+:root {
+    /* Put Styles Here! */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
+}
+
+.button-reset[disabled] {
+    cursor: default;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
