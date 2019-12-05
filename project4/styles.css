@@ -1,7 +1,8 @@
-/* Font & Color Palette */
+/* Color Palette */
 
 :root {
-    /* Put Styles Here! */
+    --color-yellow: #F6F8BC;
+    --color-pink: #FF31DF;
 }
 
 *,
@@ -36,4 +37,12 @@
     position: absolute !important;
     height: 1px;
     width: 1px;
+}
+
+/* Global Settings */
+
+body {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
