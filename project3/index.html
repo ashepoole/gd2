@@ -41,31 +41,32 @@
             <p>Please select as many as apply to your origin and how you gained your powers.</p>
 
             <span>
-                <input id="alien" type="checkbox">
+                <input name="category" id="alien" type="checkbox">
                 <label for="alien">Alien</label>
             </span>
 
             <span>
-                <input id="cyborg" type="checkbox">
+                <input name="category" id="cyborg" type="checkbox">
                 <label for="cyborg">Cyborg</label>
             </span>
 
             <span>
-                <input id="experiment" type="checkbox">
+                <input name="category" id="experiment" type="checkbox">
                 <label for="experiment">Experiment</label>
             </span>
 
-            <span><input id="human" type="checkbox">
+            <span>
+                <input name="category" id="human" type="checkbox">
                 <label for="human">Human</label>
             </span>
 
             <span>
-                <input id="inhuman" type="checkbox">
+                <input name="category" id="inhuman" type="checkbox">
                 <label for="inhuman">Inhuman</label>
             </span>
 
             <span>
-                <input id="mutant" type="checkbox">
+                <input name="category" id="mutant" type="checkbox">
                 <label for="mutant">Mutant</label>
             </span>
         </fieldset>
@@ -75,12 +76,12 @@
 
             <span>
                 <input name="gender" id="female" type="radio" required>
-                <label for="woman">Female</label>
+                <label for="female">Female</label>
             </span>
 
             <span>
                 <input name="gender" id="male" type="radio" required>
-                <label for="man">Male</label>
+                <label for="male">Male</label>
             </span>
 
             <span>
@@ -102,6 +103,7 @@
                 <input name="gender" id="self-describe" type="radio" required>
                 <label for="self-describe">Prefer to self describe</label>
             </span>
+            <label class="sr-only" for="self-describe-text">Tell us how you identify</label>
             <input id="self-describe-text" type="text">
 
         </fieldset>
@@ -116,9 +118,9 @@
             <legend>Rate Your Abilities</legend>
             <div class="abilities">
 
-                <div>
+                <label>
                     <img src="images/icon-strength.svg" alt="Just how strong are you?">
-                    <label for="strength">Strength</label>
+                    Strength
                     <select name="" id="strength">
                         <option value="norm">Within Human Norms</option>
                         <option value="noticeable">Noticeably Above Norms</option>
@@ -126,11 +128,11 @@
                         <option value="wild">Wildy Beyond Norms</option>
                         <option value="unlimited">Unlimited</option>
                     </select>
-                </div>
+                </label>
 
-                <div>
+                <label>
                     <img src="images/icon-speed.svg" alt="How fast can you move?">
-                    <label for="speed">Speed</label>
+                    Speed
                     <select name="" id="speed">
                         <option value="norm">Within Human Norms</option>
                         <option value="noticeable">Noticeably Above Norms</option>
@@ -138,11 +140,11 @@
                         <option value="wild">Wildy Beyond Norms</option>
                         <option value="unlimited">Unlimited</option>
                     </select>
-                </div>
+                </label>
 
-                <div>
+                <label>
                     <img src="images/icon-intelligence.svg" alt="How intelligent are you?">
-                    <label for="intelligence">Intelligence</label>
+                    Intelligence
                     <select name="" id="intelligence">
                         <option value="norm">Within Human Norms</option>
                         <option value="noticeable">Noticeably Above Norms</option>
@@ -150,7 +152,7 @@
                         <option value="wild">Wildy Beyond Norms</option>
                         <option value="unlimited">Unlimited</option>
                     </select>
-                </div>
+                </label>
             </div>
         </fieldset>
 
