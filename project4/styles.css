@@ -69,7 +69,10 @@ h2 {
 }
 
 h3 {
-    font-size: 65px;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-top: 200px;
 }
 
 header {
@@ -85,7 +88,10 @@ header p {
 
 img {
     border-radius: 50%;
-    opacity: .7;
+    opacity: .4;
+    position: absolute;
+    width: 240px;
+    z-index: -1;
 }
 
 li {
@@ -132,6 +138,18 @@ p {
     text-transform: uppercase;
 }
 
+.date:before {
+    content: "///";
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.event-time {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
 .fixed {
     position: fixed;
     bottom: 10px;
@@ -154,6 +172,37 @@ p {
     position: relative;
 }
 
+.speaker1 h3 {
+    bottom: 10px;
+    right: 8px;
+    position: relative;
+}
+
+.speaker1 img {
+    left: -20px;
+}
+
+.speaker2 h3 {
+    left: -15px;
+    position: relative;
+    text-align: center;
+}
+
+.speaker2 img {
+    left: 40%;
+}
+
+.speaker3 h3 {
+    bottom: 20px;
+    left: 18px;
+    position: relative;
+    text-align: right;
+}
+
+.speaker3 img {
+    right: -40px;
+}
+
 .sticky {
     display: block;
     position: -webkit-sticky;
@@ -165,4 +214,21 @@ p {
     color: var(--color-yellow);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--color-pink);
+}
+
+@media (min-width: 768px) {
+
+    #speakers {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #speakers div {
+        max-width: 280px;
+    }
+
+    h3 {
+        padding-top: 150px;
+        line-height: 40px;
+    }
 }
