@@ -83,6 +83,11 @@ header p {
     margin: 0;
 }
 
+img {
+    border-radius: 50%;
+    opacity: .7;
+}
+
 li {
     font-size: 30px;
     padding-left: -20px;
@@ -135,6 +140,14 @@ p {
 .overflow-x-hidden {
     overflow-x: scroll;
     border: 1px solid blue;
+}
+
+.quote:after {
+    content: "\201D";
+}
+
+.quote:before {
+    content: "\201C";
 }
 
 .relative {
