@@ -70,6 +70,9 @@ h1 {
 h2 {
     /* Only affects the "schedule" h2, as the rest are only for screenreaders */
     font-size: 120px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
     text-align: center;
 }
 
@@ -161,9 +164,8 @@ p {
 }
 
 .event-time {
-    display: flex;
-    padding: 0;
-    margin: 0;
+    border-bottom: 2px solid var(--color-pink);
+    display: inline-flex;
 }
 
 .event-title {
