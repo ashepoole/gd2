@@ -54,7 +54,10 @@ body {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
-    overflow-x: hidden;
+}
+
+html {
+    width: 100%;
 }
 
 h1 {
@@ -65,7 +68,7 @@ h1 {
 }
 
 h2 {
-    /* Only affects the "schedule" h2, as the rest are semantic only */
+    /* Only affects the "schedule" h2, as the rest are only for screenreaders */
     font-size: 120px;
     text-align: center;
 }
@@ -85,6 +88,7 @@ header {
 }
 
 header p {
+    font-size: 25px;
     margin: 0;
 }
 
@@ -110,6 +114,10 @@ li a {
     text-decoration: none;
 }
 
+li span:after {
+    content: "///";
+}
+
 main {
     padding-bottom: 20px;
 }
@@ -121,13 +129,14 @@ nav {
 }
 
 p {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 #about p {
     font-size: 60px;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 100px;
 }
 
 .absolute {
@@ -139,9 +148,9 @@ p {
     color: inherit;
     display: block;
     font-family: inherit;
-    font-size: 110px;
+    font-size: 60px;
     font-weight: 700;
-    line-height: 80px;
+    line-height: 50px;
     text-transform: uppercase;
 }
 
@@ -168,9 +177,9 @@ p {
     bottom: 10px;
 }
 
-.overflow-x-hidden {
-    overflow-x: scroll;
-    border: 1px solid blue;
+.no-wrap {
+    white-space: nowrap;
+    word-break: keep-all;
 }
 
 .relative {
@@ -213,8 +222,7 @@ p {
     top: -20px;
 }
 
-.speaker2 .event-title,
-.speaker2 .event-time {
+.speaker2 .event-title {
     text-align: center;
 }
 
@@ -226,11 +234,11 @@ p {
 }
 
 .speaker3 img {
+    top: 14px;
     right: -40px;
 }
 
-.speaker3 .event-title,
-.speaker3 .event-time {
+.speaker3 .event-title {
     text-align: right;
 }
 
@@ -247,6 +255,32 @@ p {
     -webkit-text-stroke-color: var(--color-pink);
 }
 
+@media (max-width: 374px) {
+    /* hotfix for older phones */
+
+    header p {
+        font-size: 20px;
+    }
+
+    .buy-tickets {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+}
+
+@media (min-width: 615px) {
+
+    header p {
+        font-size: 30px;
+    }
+
+    .buy-tickets {
+        font-size: 110px;
+        line-height: 80px;
+    }
+}
+
 @media (min-width: 768px) {
 
     #speakers {
@@ -254,14 +288,49 @@ p {
         justify-content: space-around;
     }
 
+}
+
+@media (min-width: 768px) and (max-width: 940px) {
+    /* keeps elements from shifting too much */
+
     h3 {
         padding-top: 150px;
-        line-height: 40px;
+        font-size: 40px;
+    }
+
+    .event-time p {
+        font-size: 24px;
     }
 }
 
-@media (min-width:768px) and (max-width:940px) {
-    h3 {
+@media (min-width: 940px) {
+
+    header p {
         font-size: 40px;
+        padding-left: 50px;
+    }
+
+    h1 {
+        font-size: 100px;
+        padding-left: 50px;
+    }
+
+    h3 {
+        padding-top: 200px;
+    }
+
+    img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* removes overflow until full-width  */
+
+    h2,
+    h3,
+    .speaker3 {
+        overflow: hidden;
+        overflow: -moz-hidden-unscrollable;
     }
 }
