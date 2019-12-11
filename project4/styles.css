@@ -56,10 +56,6 @@ body {
     margin-right: auto;
 }
 
-html {
-    width: 100%;
-}
-
 h1 {
     font-size: 70px;
     line-height: 60px;
@@ -83,8 +79,12 @@ h3 {
     padding-top: 200px;
 }
 
+html {
+    width: 100%;
+}
+
 header {
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
@@ -134,6 +134,8 @@ nav {
 p {
     font-size: 30px;
 }
+
+/* Custom Styles */
 
 #about p {
     font-size: 60px;
@@ -256,6 +258,8 @@ p {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--color-pink);
 }
+
+/* Responsive Elements */
 
 @media (max-width: 374px) {
     /* hotfix for older phones */
