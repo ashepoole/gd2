@@ -236,6 +236,7 @@ p {
 }
 
 .speaker2 img {
+    left: 25%;
     top: -20px;
 }
 
@@ -286,6 +287,9 @@ p {
         line-height: 40px;
     }
 
+    .speaker2 img {
+        left: 15%;
+    }
 }
 
 @media (min-width: 615px) {
@@ -297,6 +301,10 @@ p {
     .buy-tickets {
         font-size: 110px;
         line-height: 80px;
+    }
+
+    .speaker2 img {
+        left: 35%;
     }
 }
 
@@ -312,6 +320,10 @@ p {
     #speakers {
         display: flex;
         justify-content: space-around;
+    }
+
+    .speaker2 img {
+        left: 0;
     }
 
 }
