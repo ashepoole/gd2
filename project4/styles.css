@@ -167,8 +167,11 @@ p {
 }
 
 .event-time {
-    border-bottom: 2px solid var(--color-pink);
-    display: inline-flex;
+    display: block;
+}
+
+.event-time p {
+    display: inline;
 }
 
 .event-title {
@@ -185,6 +188,11 @@ p {
 .no-wrap {
     white-space: nowrap;
     word-break: keep-all;
+}
+
+.position-fix {
+    /* lines up the first "buy tickets" button */
+    padding-top: 2px;
 }
 
 .relative {
