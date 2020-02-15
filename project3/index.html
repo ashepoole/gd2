@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=BenchNine:300,400,700|Teko:500,600,700&display=swap"
+        rel="stylesheet">
+    <title>Super Hero Registry</title>
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/logo-shield.svg" alt="Our logo—a bold circle with an eagle emblem.">
+        <h1>Super Hero Registry</h1>
+        <p class="subheading">With great power there also must come—great responsibility</p>
+    </header>
+
+    <form action="">
+        <h2>Identity</h2>
+
+        <label for="real-name">Real Name</label>
+        <input id="real-name" type="text" placeholder="" required>
+
+        <label for="alias">Alias</label>
+        <input id="alias" type="text" placeholder="" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="">
+
+        <h2>Personal Characteristics</h2>
+
+        <label for="age">Age</label>
+        <input id="age" type="number" placeholder="" required>
+
+        <fieldset class="left-column">
+            <legend>Category</legend>
+            <p>Please select as many as apply to your origin and how you gained your powers.</p>
+
+            <span>
+                <input name="category" id="alien" type="checkbox">
+                <label for="alien">Alien</label>
+            </span>
+
+            <span>
+                <input name="category" id="cyborg" type="checkbox">
+                <label for="cyborg">Cyborg</label>
+            </span>
+
+            <span>
+                <input name="category" id="experiment" type="checkbox">
+                <label for="experiment">Experiment</label>
+            </span>
+
+            <span>
+                <input name="category" id="human" type="checkbox">
+                <label for="human">Human</label>
+            </span>
+
+            <span>
+                <input name="category" id="inhuman" type="checkbox">
+                <label for="inhuman">Inhuman</label>
+            </span>
+
+            <span>
+                <input name="category" id="mutant" type="checkbox">
+                <label for="mutant">Mutant</label>
+            </span>
+        </fieldset>
+
+        <fieldset class="right-column">
+            <legend>Gender</legend>
+
+            <span>
+                <input name="gender" id="female" type="radio" required>
+                <label for="female">Female</label>
+            </span>
+
+            <span>
+                <input name="gender" id="male" type="radio" required>
+                <label for="male">Male</label>
+            </span>
+
+            <span>
+                <input name="gender" id="nonbinary" type="radio" required>
+                <label for="nonbinary">Nonbinary</label>
+            </span>
+
+            <span>
+                <input name="gender" id="genderqueer" type="radio" required>
+                <label for="genderqueer">Genderqueer/Genderfluid</label>
+            </span>
+
+            <span>
+                <input name="gender" id="no-answer" type="radio" required>
+                <label for="no-answer">Prefer not to answer</label>
+            </span>
+
+            <span>
+                <input name="gender" id="self-describe" type="radio" required>
+                <label for="self-describe">Prefer to self describe</label>
+            </span>
+            <label class="sr-only" for="self-describe-text">Tell us how you identify</label>
+            <input id="self-describe-text" type="text">
+
+        </fieldset>
+
+        <h2>Powers & Abilities</h2>
+
+        <label for="powers">Describe Your Powers</label>
+        <textarea name="" id="powers"></textarea>
+
+        <fieldset>
+
+            <legend>Rate Your Abilities</legend>
+            <div class="abilities">
+
+                <label>
+                    <img src="images/icon-strength.svg" alt="Just how strong are you?">
+                    Strength
+                    <select name="" id="strength">
+                        <option value="norm">Within Human Norms</option>
+                        <option value="noticeable">Noticeably Above Norms</option>
+                        <option value="significant">Significantly Beyond Norms</option>
+                        <option value="wild">Wildy Beyond Norms</option>
+                        <option value="unlimited">Unlimited</option>
+                    </select>
+                </label>
+
+                <label>
+                    <img src="images/icon-speed.svg" alt="How fast can you move?">
+                    Speed
+                    <select name="" id="speed">
+                        <option value="norm">Within Human Norms</option>
+                        <option value="noticeable">Noticeably Above Norms</option>
+                        <option value="significant">Significantly Beyond Norms</option>
+                        <option value="wild">Wildy Beyond Norms</option>
+                        <option value="unlimited">Unlimited</option>
+                    </select>
+                </label>
+
+                <label>
+                    <img src="images/icon-intelligence.svg" alt="How intelligent are you?">
+                    Intelligence
+                    <select name="" id="intelligence">
+                        <option value="norm">Within Human Norms</option>
+                        <option value="noticeable">Noticeably Above Norms</option>
+                        <option value="significant">Significantly Beyond Norms</option>
+                        <option value="wild">Wildy Beyond Norms</option>
+                        <option value="unlimited">Unlimited</option>
+                    </select>
+                </label>
+            </div>
+        </fieldset>
+
+        <div class="send-form">
+            <input id="confirm" type="checkbox">
+            <span class="confirm-notice">
+                <label for="confirm">I confirm the above information represents my
+                    current details and is correct to the best of my knowledge.</label>
+            </span>
+        </div>
+
+        <button class="button-reset" type="submit">Register Now</button>
+    </form>
+
+</body>
+
+</html>
